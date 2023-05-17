@@ -1,6 +1,6 @@
 <h1>Pandas Data Cleaning Documentation</h1>
 
-1. Introduction to Pandas
+<b>1. Introduction to Pandas</b>
 
 Pandas is a popular open-source data manipulation and analysis library for Python. It provides easy-to-use data structures and data analysis tools to work efficiently with structured data.
 Key features of Pandas include:
@@ -10,7 +10,7 @@ Key features of Pandas include:
 - Built-in tools for data cleaning, transformation, and analysis.
 - Integration with other Python libraries for data visualization and machine learning.
 
-2. Installation
+<b>2. Installation</b>
 
 To install Pandas, you can use the following command using pip:
 
