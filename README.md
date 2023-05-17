@@ -120,3 +120,30 @@ Duplicate rows can affect the accuracy of data analysis. Pandas provides the dro
 df.duplicated(subset)<br>
 #To drop duplicate rows based on specific column we can use .duplicates(subset)<br>
 df.duplicates(subset)<br>
+
+<b>7.Handling Outliers</b><br>
+Outliers are extreme values that deviate from the normal range of data. Pandas allows you to detect and handle outliers using various statistical techniques.<br>
+
+“import pandas as pd <br>
+
+#Detecting outliers using z-score<br> 
+from scipy import stats <br>
+z_scores = stats.zscore(df['column_name'])<br> 
+outliers = df[(z_scores > 3) | (z_scores < -3)]<br> 
+
+#Removing outliers <br>
+df = df[(z_scores < 3) & (z_scores > -3)] ”<br>
+
+<b>8.Data Type Conversion</b><br>
+Pandas provides methods to convert data types of columns, such as astype(), to_numeric(), and to_datetime().<br>
+
+“import pandas as pd <br>
+
+#Converting a column to a different data type<br> 
+df['column_name'] = df['column_name'].astype(int)<br> 
+
+#Converting a column to numeric data type <br>
+df['column_name'] = pd.to_numeric(df['column_name'], errors='coerce')<br>
+
+ #Converting a column to datetime data type <br>
+ df['date_column'] = pd.to_datetime(df['date_column']) ”<br>
