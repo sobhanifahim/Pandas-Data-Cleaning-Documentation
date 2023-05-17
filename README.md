@@ -86,8 +86,8 @@ df = pd.read_csv('data.csv')   //you should provide the file path if it is insid
 print(df)”<br>
 
 Make sure to replace 'data.csv' with the actual path to your.<br>
- 
-<b>6. Data Cleaning Techniques</b><br>
+<b> 
+6. Data Cleaning Techniques</b><br>
 Data cleaning is an essential step in the data analysis process. Here are some common data cleaning techniques using Pandas:<br>
 Handling Missing Values<br>
 Missing values are common in real-world datasets. Pandas provides several methods for handling missing values, such as dropna(),<br> fillna(), and interpolate().<br>
