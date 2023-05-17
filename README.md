@@ -147,3 +147,30 @@ df['column_name'] = pd.to_numeric(df['column_name'], errors='coerce')<br>
 
  #Converting a column to datetime data type <br>
  df['date_column'] = pd.to_datetime(df['date_column']) ”<br>
+ 
+<b>9.Renaming Columns</b><br>
+You can rename columns in a DataFrame using the rename() method.<br>
+“import pandas as pd<br>
+#Renaming columns<br>
+df = df.rename(columns={'old_name': 'new_name'}) ”<br>
+
+<b>10.Handling Categorical Data</b><br>
+Pandas provides methods to handle categorical data, such as get_dummies() for one-hot encoding and astype('category') for converting a column to a categorical data type.<br>
+
+
+“import pandas as pd<br>
+#One-hot encoding categorical columns<br>
+df_encoded = pd.get_dummies(df, columns=['categorical_column'])<br>
+#Converting a column to categorical data type<br>
+df['column_name'] = df['column_name'].astype('category') ”<br>
+
+<b>11.Filtering and Sorting Data</b><br>
+Pandas allows you to filter and sort data based on specific criteria using Boolean indexing and sorting methods.<br>
+
+“import pandas as pd<br>
+#Filtering data based on a condition<br>
+filtered_df = df[df['column_name'] > 10]<br>
+#Sorting data by a column<br>
+sorted_df = df.sort_values(by='column_name') ”<br>
+<b>12.Conclusion</b><br>
+Pandas is a powerful library for cleaning and manipulating data in Python. This document provides an introduction to Pandas, installation instructions, and covers various techniques for data cleaning with Pandas. By leveraging Pandas features, you can efficiently clean and preprocess your data, preparing it for further analysis and modeling.
