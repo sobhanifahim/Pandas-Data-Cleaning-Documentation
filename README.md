@@ -71,3 +71,54 @@ Output:
 1 Fahim    24     Munshiganj<br>
 2 Najirul  29     Kishoregonj<br>
 3 Mubin    27     Tangail<br>
+
+
+5. Loading Data into Pandas
+
+Pandas provides various methods for loading data from different sources such as CSV files, Excel files, databases, and more. Here's an example of loading data from a CSV file:
+
+“import pandas as pd
+
+#Loading data from a CSV file
+df = pd.read_csv('data.csv')   //you should provide the file path if it is inside a                        
+                                                 directory
+
+#Printing the DataFrame
+print(df)”
+
+Make sure to replace 'data.csv' with the actual path to your.
+ 
+6. Data Cleaning Techniques
+Data cleaning is an essential step in the data analysis process. Here are some common data cleaning techniques using Pandas:
+Handling Missing Values
+Missing values are common in real-world datasets. Pandas provides several methods for handling missing values, such as dropna(), fillna(), and interpolate().
+
+“import pandas as pd
+
+#Dropping rows with missing values
+ df.dropna()
+#You can use .isna() to check if there is presence of null value as NaN, it will return true or false 
+df.isna()
+#To count the total number of  missing values in each column  we can use .sum() with df.isna()
+df.isna().sum()
+#Filling missing values with a specific value 
+df.fillna(0) 
+
+#Filling missing values with themean of the column 
+df.fillna(df.mean()) 
+
+#Interpolating missing values using linear interpolation 
+df.interpolate()” 
+ 
+Removing Duplicates
+Duplicate rows can affect the accuracy of data analysis. Pandas provides the drop_duplicates() method to remove duplicate rows from a DataFrame.
+
+“import pandas as pd 
+
+# Dropping duplicate rows
+ df.drop_duplicates()”
+
+#To indicate the duplicate rows we can use .duplicated(subset)
+df.duplicated(subset)
+#To drop duplicate rows based on specific column we can use .duplicates(subset)
+df.duplicates(subset)
