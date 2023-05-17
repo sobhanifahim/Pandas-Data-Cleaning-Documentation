@@ -72,53 +72,52 @@ Output:
 2 Najirul  29     Kishoregonj<br>
 3 Mubin    27     Tangail<br>
 
+<b>5. Loading Data into Pandas</b>
 
-5. Loading Data into Pandas
-
-Pandas provides various methods for loading data from different sources such as CSV files, Excel files, databases, and more. Here's an example of loading data from a CSV file:
+Pandas provides various methods for loading data from different sources such as CSV files, Excel files, databases, and more. Here's an example of loading data from a CSV file:<br>
 
 “import pandas as pd
 
 #Loading data from a CSV file
 df = pd.read_csv('data.csv')   //you should provide the file path if it is inside a                        
-                                                 directory
+                                                 directory<br>
 
-#Printing the DataFrame
-print(df)”
+#Printing the DataFrame<br>
+print(df)”<br>
 
-Make sure to replace 'data.csv' with the actual path to your.
+Make sure to replace 'data.csv' with the actual path to your.<br>
  
-6. Data Cleaning Techniques
-Data cleaning is an essential step in the data analysis process. Here are some common data cleaning techniques using Pandas:
-Handling Missing Values
-Missing values are common in real-world datasets. Pandas provides several methods for handling missing values, such as dropna(), fillna(), and interpolate().
+<b>6. Data Cleaning Techniques</b><br>
+Data cleaning is an essential step in the data analysis process. Here are some common data cleaning techniques using Pandas:<br>
+Handling Missing Values<br>
+Missing values are common in real-world datasets. Pandas provides several methods for handling missing values, such as dropna(),<br> fillna(), and interpolate().<br>
 
-“import pandas as pd
+“import pandas as pd<br>
 
-#Dropping rows with missing values
- df.dropna()
-#You can use .isna() to check if there is presence of null value as NaN, it will return true or false 
-df.isna()
-#To count the total number of  missing values in each column  we can use .sum() with df.isna()
-df.isna().sum()
-#Filling missing values with a specific value 
-df.fillna(0) 
+#Dropping rows with missing values<br>
+ df.dropna()<br>
+#You can use .isna() to check if there is presence of null value as NaN, it will return true or false <br>
+df.isna()<br>
+#To count the total number of  missing values in each column  we can use .sum() with df.isna()<br>
+df.isna().sum()<br>
+#Filling missing values with a specific value <br>
+df.fillna(0) <br>
 
-#Filling missing values with themean of the column 
-df.fillna(df.mean()) 
+#Filling missing values with themean of the column <br>
+df.fillna(df.mean()) <br>
 
-#Interpolating missing values using linear interpolation 
-df.interpolate()” 
+#Interpolating missing values using linear interpolation <br>
+df.interpolate()” <br>
  
-Removing Duplicates
-Duplicate rows can affect the accuracy of data analysis. Pandas provides the drop_duplicates() method to remove duplicate rows from a DataFrame.
+Removing Duplicates<br>
+Duplicate rows can affect the accuracy of data analysis. Pandas provides the drop_duplicates() method to remove duplicate rows from a DataFrame.<br>
 
-“import pandas as pd 
+“import pandas as pd <br>
 
-# Dropping duplicate rows
- df.drop_duplicates()”
+#Dropping duplicate rows<br>
+ df.drop_duplicates()”<br>
 
-#To indicate the duplicate rows we can use .duplicated(subset)
-df.duplicated(subset)
-#To drop duplicate rows based on specific column we can use .duplicates(subset)
-df.duplicates(subset)
+#To indicate the duplicate rows we can use .duplicated(subset)<br>
+df.duplicated(subset)<br>
+#To drop duplicate rows based on specific column we can use .duplicates(subset)<br>
+df.duplicates(subset)<br>
