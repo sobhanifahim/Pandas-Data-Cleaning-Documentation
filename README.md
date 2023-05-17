@@ -35,10 +35,10 @@ A Series is a one-dimensional labeled array capable of holding any data type. It
 
 
 “import pandas as pd
-# Creating a Series
+#Creating a Series
 s = pd.Series([6, 7, 8, np.nan, 10, 11])
 
-# Printing the Series
+#Printing the Series
 print(s)”
 
 Output:
@@ -56,12 +56,12 @@ Data Frame
 A Data Frame is a two-dimensional labeled data structure with columns of potentially different data types. It can be seen as a spreadsheet or a SQL table. A Data Frame consists of three components: the data, the index, and the column names.
 
 “import pandas as pd
-# Creating a Data Frame
+#Creating a Data Frame
 data = {'Name': ['Anas', 'Fahim', 'Najirul', 'Mubin'],
         'Age': [23, 24, 29, 27],
         'District': ['Joypurhat', 'Munshiganj', 'Kishoregonj', 'Tangail']}
 df = pd.DataFrame(data)
-# Printing the Data Frame
+#Printing the Data Frame
 print(df)”
 
 Output:
