@@ -43,31 +43,31 @@ print(s)”
 
 Output:
 
-0    6.0
-1    7.0
-2    8.0
-3    NaN
-4    10.0
-5    11.0
-dtype: float64
+0    6.0<br>
+1    7.0<br>
+2    8.0<br>
+3    NaN<br>
+4    10.0<br>
+5    11.0<br>
+dtype: float64 <br>
 
-Data Frame
+Data Frame<br>
 
-A Data Frame is a two-dimensional labeled data structure with columns of potentially different data types. It can be seen as a spreadsheet or a SQL table. A Data Frame consists of three components: the data, the index, and the column names.
+A Data Frame is a two-dimensional labeled data structure with columns of potentially different data types. It can be seen as a spreadsheet or a SQL table. A Data Frame consists of three components: the data, the index, and the column names.<br>
 
-“import pandas as pd
-#Creating a Data Frame
-data = {'Name': ['Anas', 'Fahim', 'Najirul', 'Mubin'],
-        'Age': [23, 24, 29, 27],
-        'District': ['Joypurhat', 'Munshiganj', 'Kishoregonj', 'Tangail']}
-df = pd.DataFrame(data)
-#Printing the Data Frame
-print(df)”
+“import pandas as pd<br>
+#Creating a Data Frame<br>
+data = {'Name': ['Anas', 'Fahim', 'Najirul', 'Mubin'],<br>
+        'Age': [23, 24, 29, 27],<br>
+        'District': ['Joypurhat', 'Munshiganj', 'Kishoregonj', 'Tangail']}<br>
+df = pd.DataFrame(data)<br>
+#Printing the Data Frame<br>
+print(df)”<br>
 
 Output:
 
-   Name   Age    District
-0 Anas     23        Joypurhat
-1 Fahim    24      Munshiganj
-2 Najirul    29     Kishoregonj
-3 Mubin     27     Tangail
+   Name    Age    District<br>
+0 Anas     23     Joypurhat<br>
+1 Fahim    24     Munshiganj<br>
+2 Najirul  29     Kishoregonj<br>
+3 Mubin    27     Tangail<br>
