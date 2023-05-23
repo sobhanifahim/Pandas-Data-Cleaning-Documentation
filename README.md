@@ -59,12 +59,12 @@ A Data Frame is a two-dimensional labeled data structure with columns of potenti
 
 ### Creating a Data Frame
 
-```data = {'Name': ['Anas', 'Fahim', 'Najirul', 'Mubin'],<br>
+data = {'Name': ['Anas', 'Fahim', 'Najirul', 'Mubin'],<br>
         'Age': [23, 24, 29, 27],<br>
         'District': ['Joypurhat', 'Munshiganj', 'Kishoregonj', 'Tangail']}<br>
 df = pd.DataFrame(data)<br>
 #Printing the Data Frame<br>
-print(df) ```
+print(df) 
 
 Output:
 
