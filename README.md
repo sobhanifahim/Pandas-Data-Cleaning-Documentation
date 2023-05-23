@@ -175,8 +175,8 @@ filtered_df = df[df['column_name'] > 10]<br>
 #Sorting data by a column<br>
 sorted_df = df.sort_values(by='column_name') ”<br>
 
-<b>12. Load Json file in pandas</b>
-'''import pandas as pd
-df = pd.read_json('data.json')'''
+<b>12. Load Json file in pandas</b><br>
+import pandas as pd<br>
+df = pd.read_json('data.json')<br>
 <b>13.Conclusion</b><br>
 Pandas is a powerful library for cleaning and manipulating data in Python. This document provides an introduction to Pandas, installation instructions, and covers various techniques for data cleaning with Pandas. By leveraging Pandas features, you can efficiently clean and preprocess your data, preparing it for further analysis and modeling.
