@@ -118,16 +118,16 @@ Duplicate rows can affect the accuracy of data analysis. Pandas provides the dro
 #Dropping duplicate rows<br>
  df.drop_duplicates()”<br>
 
-#Trimming White Space in Pandas Strings
+#Trimming White Space in Pandas Strings<br>
 df.str.strip()
 
-#Splitting Strings into Columns in Pandas
+#Splitting Strings into Columns in Pandas<br>
 df.str.split(',')
 
-#Replacing Text in Strings in Pandas
+#Replacing Text in Strings in Pandas<br>
 df['Column_name'].str.replace('Column_name', '')
 
-#Changing String Case in Pandas
+#Changing String Case in Pandas<br>
 df.upper()
 df.lower()
 df.title()
