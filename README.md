@@ -118,6 +118,20 @@ Duplicate rows can affect the accuracy of data analysis. Pandas provides the dro
 #Dropping duplicate rows<br>
  df.drop_duplicates()”<br>
 
+#Trimming White Space in Pandas Strings
+df.str.strip()
+
+#Splitting Strings into Columns in Pandas
+df.str.split(',')
+
+#Replacing Text in Strings in Pandas
+df['Column_name'].str.replace('Column_name', '')
+
+#Changing String Case in Pandas
+df.upper()
+df.lower()
+df.title()
+
 #To indicate the duplicate rows we can use .duplicated(subset)<br>
 df.duplicated(subset)<br>
 #To drop duplicate rows based on specific column we can use .duplicates(subset)<br>
